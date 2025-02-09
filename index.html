@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo da Agência">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="pacotes">Pacotes</a></li>
+                <li><a href="cadastros.html">Cadastro</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+        <h1>Sobre Nós</h1>
+        <p>Somos uma agência de viagens dedicada a proporcionar experiências inesquecíveis. Trabalhamos com pacotes
+            personalizados.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Pacotes de Viagem -->
+    <section id="pacotes" class="pacotes">
+        <div class="container">
+        <h2>Pacotes de Viagem</h2>
+        <div class="pacote">
+            <img style="color: black;" src="img/paris.jpeg" alt="Pacote para Paris">
+            <h3>Paris - França</h3>
+            <p>Pacote completo para a cidade luz! Inclui passagem, hospedagem e city tour.</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+        <div class="pacote">
+            <img style="color: black;" src="img/nova york.jpeg" alt="Pacote para Nova York">
+            <h3>Nova York - EUA</h3>
+            <p>Explore a Big Apple com pacotes exclusivos para compras, turismo e gastronomia.</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+        <div class="pacote">
+            <img style="color: black;" src="img/tokyo.jpeg" alt="Pacote para Tokyo">
+            <h3>Tokyo - Japão</h3>
+            <p>Descubra a cultura japonesa com um pacote que inclui guia local e transporte.</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <div class="container row">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post">
+            <label style="color: black;" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label style="color: black;" for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label style="color: black;" sfor="email">Fone:</label>
+            <input type="tel" name="fone" size="50" />
+
+            <label style="color: black;" for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" cols="30" name="mensagem" rows="6" required></textarea>
+
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <div class="container">
+        <footer>
+            <p>&copy; 2025 Prime Tour - Todos os direitos reservados</p>
+        </footer>
+    </div>
+</div>
+    <a href="cadastros.html">Próximo</a>
+</body>
+
+</html>
