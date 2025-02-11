@@ -1,4 +1,4 @@
-/* Reset de estilo para garantir uma boa base */
+/* Estilo para base */
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@
     color: #070707;
   }
   
-  /* Seção Pacotes */
+  /* Pacotes */
   .pacotes {
     background-color: #19e7e7;
     padding: 50px 20px;
@@ -114,7 +114,7 @@
     color: #070606e7;
   }
   
-  /* Seção Contato */
+  /* Contato */
   .contato {
     background-color: #fff;
     padding: 50px 20px;
@@ -159,7 +159,7 @@
     background-color: #19e7e7;
   }
   
-  /*Classe Rodapé */
+  /* Rodapé */
   .rodape {
     background-color: #19e7e7;
     color: rgb(20, 4, 94);
