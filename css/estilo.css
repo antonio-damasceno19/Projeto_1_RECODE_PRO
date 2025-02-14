@@ -1,172 +1,201 @@
-/* Estilo para base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #080e5e;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #19e7e7;
+  color: rgb(27, 8, 99);
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(10, 6, 80);
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #fcfcff;
+}
+
+/* Seção Sobre */
+.sobre {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.sobre h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  font-size: 1.2em;
+  color: #070707;
+}
+
+/* Pacotes */
+.pacotes {
+  background-color: #19e7e7;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.pacotes h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.pacote {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.pacote img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.pacote h3 {
+  font-size: 1.8em;
+  margin: 15px 0;
+}
+
+.pacote p {
+  font-size: 1em;
+  color: #0c0c0c;
+}
+
+.pacote a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #080e5e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pacote a:hover {
+  color: #070606e7;
+}
+
+/* Contato */
+.contato {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contato form {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contato label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.contato input,
+.contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contato button {
+  background-color: #080e5e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contato button:hover {
+  background-color: #19e7e7;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #19e7e7;
+  color: rgb(20, 4, 94);
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column; /* Menu vertical em telas menores */
+    align-items: center; /* Centraliza os produtos em telas menores */
   }
-  
-  /* Corpo da página */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #080e5e;
-    line-height: 1.6;
+
+  .menu li {
+    display: block; /* Exibe os itens em bloco (um abaixo do outro) em telas menores */
+    margin: 10px 0; /* Margem vertical nos itens do menu */
+    width: 100%; /* Largura total para os itens do menu em telas menores */
+    text-align: center; /* Centraliza o texto dos itens do menu em telas menores */
   }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #19e7e7;
-    color: rgb(27, 8, 99);
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 1.8rem; /* Diminui o tamanho da fonte em telas menores */
+    text-align: center; /* Centraliza o texto em telas menores */
   }
-  
-  header .logo img {
-    width: 100px;
-  }
-  
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  header nav ul li {
-    margin-left: 20px;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    color: rgb(10, 6, 80);
-    font-weight: bold;
-  }
-  
-  header nav ul li a:hover {
-    color: #fcfcff;
-  }
-  
-  /* Seção Sobre */
-  .sobre {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .sobre h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .sobre p {
-    font-size: 1.2em;
-    color: #070707;
-  }
-  
-  /* Pacotes */
-  .pacotes {
-    background-color: #19e7e7;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .pacotes h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-  }
-  
-  .pacote {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .pacote img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .pacote h3 {
-    font-size: 1.8em;
-    margin: 15px 0;
-  }
-  
-  .pacote p {
-    font-size: 1em;
-    color: #0c0c0c;
-  }
-  
-  .pacote a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #080e5e;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .pacote a:hover {
-    color: #070606e7;
-  }
-  
-  /* Contato */
-  .contato {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .contato h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .contato form {
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  .contato label {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-  }
-  
-  .contato input, .contato textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contato button {
-    background-color: #080e5e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contato button:hover {
-    background-color: #19e7e7;
-  }
-  
-  /* Rodapé */
-  .rodape {
-    background-color: #19e7e7;
-    color: rgb(20, 4, 94);
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer p {
-    font-size: 1em;
-  }
+}
+
+.pacote {
+  width: 90%; /* Largura dos produtos em telas menores */
+  max-width: 300px; /* Largura máxima dos produtos */
+}
+
+.forms {
+  width: 90%; /* Largura dos produtos em telas menores */
+  max-width: 300px; /* Largura máxima dos produtos */
+}
